@@ -1,0 +1,80 @@
+.field {
+    display: flex;
+    position: relative;
+    margin-top: 2.5rem;
+    flex-direction: column;
+    font-size: var(--h5);
+}
+.fieldName {
+    position: relative;
+    font-weight: 700;
+    color: var(--text);
+}
+.fieldInput {
+    position: relative;
+    border: 0;
+    outline: none;
+    width: 20rem;
+    margin-top: 1.5rem;
+    padding: 1rem var(--padding-sm);
+    border-radius: var(--br-xs);
+    font-size: var(--base);
+    font-family: var(--noto);
+    box-shadow: var(--drop-mini);
+    color: var(--text);
+    background-color: var(--background);
+    transition: .1s ease-in-out;
+}
+.nextButton {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 2.5rem;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: var(--primary);
+    transition: .1s ease-in-out;
+}
+.loading,
+.nextButtonIcon {
+    color: var(--background);
+    width: 1.85rem;
+    height: 1.85rem;
+    margin-left: .25rem;
+}
+.nextButton:hover {
+    transform: scale(1.01);
+    box-shadow: var(--drop-mini);
+}
+.nextButton:active {
+    transform: scale(1);
+}
+.loading {
+    animation: rotation .75s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .loginForm {
+        flex-direction: column;
+    }
+    .fieldInput {
+        width: calc(100% - var(--start-point) - .5rem);
+        padding: var(--padding-2xs) var(--padding-3xs);
+        font-size: var(--h5);
+    }
+}
