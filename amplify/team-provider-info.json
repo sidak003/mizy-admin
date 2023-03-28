@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mizyadmin-dev-05229-authRole",
+      "UnauthRoleArn": "arn:aws:iam::039045110380:role/amplify-mizyadmin-dev-05229-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::039045110380:role/amplify-mizyadmin-dev-05229-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-mizyadmin-dev-05229-deployment",
+      "UnauthRoleName": "amplify-mizyadmin-dev-05229-unauthRole",
+      "StackName": "amplify-mizyadmin-dev-05229",
+      "StackId": "arn:aws:cloudformation:ap-south-1:039045110380:stack/amplify-mizyadmin-dev-05229/b8a3e930-c81d-11ed-bd7f-063836b5eb1e",
+      "AmplifyAppId": "d3dfl0leklln8e"
+    },
+    "categories": {
+      "auth": {
+        "mizyadmin40f438df": {}
+      }
+    }
+  }
+}
